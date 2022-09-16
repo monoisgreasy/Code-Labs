@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>List of Food</h1>
+
+    <ul>
+        <li>Bananas - $2</li>
+        <li>Strawberries - $4</li>
+        <li>Bread - $0.70</li>
+        <li>Milk - $4</li>
+        <li>Ice Cream - $3.50</li>
+        <li>Waffles - $4.39</li>
+    </ul>
+
+    <script>
+       const food = ["Bananas", "Strawberries", "Bread", "Milk", "Ice Cream", "Waffles"];
+
+let text = "";
+for (let i = 0; i < food.price; i++) {
+  text += food[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

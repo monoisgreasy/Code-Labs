@@ -1,0 +1,11 @@
+What are data types?
+    Number, string, boolean, NULL, undefined, and symbol.
+
+What are operators used for?
+    To assign values, compare values, preform operations, and more.
+
+What are conditional statements?
+    Represented in the form of "if...then".
+
+What are loops?
+    Loops like "for" or "while" go through blocks of code a number of times or go through a block of code while a specified condition is true.
