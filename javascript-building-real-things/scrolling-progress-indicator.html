@@ -17,6 +17,14 @@
             line-height: 1.5;
             min-height: 3000px;
         }
+        .scroll-line {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 8px;
+            background: rgb(44, 50, 45);
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1) width;
+        }
     </style>
 </head>
 <body>
@@ -38,11 +46,26 @@
             const scrolled = window.scrollY;
             const percentScrolled = (scrolled / (fullHeight - windowHeight)) * 100;
 
-            scrollLine.style.width = percentScrolled + '%';
-            scrollLine.style.width = '$[percentScrolled]%';
+            scrollLine.style.width = '${percentScrolled}%';
         }
 
-        window.addEventListener('scroll', fillScrollLine)
+        window.addEventListener('scroll', fillScrollLine);
+        
+
+        function debounce(func, wait = 15, immediate) {
+            var timeout;
+            return function() {
+                var context = this, args = arguments;
+                var later = function() {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, arg);
+            };
+        }
     </script>
 </body>
 </html>
