@@ -186,12 +186,13 @@
 
         function fillBookmarksList(bookmarks = []){ 
             const bookmarksHtml = bookmarks.map((bookmark) => { 
-                return 
+                return
                 <a href="#" class="bookmark"> 
+                    <div class="img"></div>
+                    
                     ${bookmarks.title}
                     </a> 
-                    ''; 
-            }); join(''); 
+            }).join(''); 
             bookmarksList.innerHTML = bookmarksHTML; 
             
             // let bookmarksHtml = ''; 
