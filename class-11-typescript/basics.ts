@@ -76,7 +76,7 @@ class Student {
     // age: number;
     // private courses: string[];
 
-    constructor(public first: string, public last: string, public age: number, private courses: string[]) {\
+    constructor(public first: string, public last: string, public age: number, private courses: string[]) {
     }
 
     enroll(courseName: string) {
