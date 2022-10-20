@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>{{title}}</h1>
+  <div>
+    <input type="text" [(ngModel)]="title" />
+  </div>
+
+  <div>
+    <button (click)="onToggleButton">Change Title</button>
+  </div>
+
+  <div *ngFor="let user of users">
+    <div>{{user.username}}</div>
+    <div>{{user.age}}</div>
+  </div>
+</div>
